@@ -15,7 +15,7 @@ searchInput.addEventListener("input", e => {
 })
 
 var newId = 0
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("/home/rawan/test_task_fullstack/version_2/users.json")
 
   .then(res => res.json())
   .then(data => {
@@ -34,7 +34,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
       body.textContent = user.email
       userCardContainer.append(card)
       // userCardContainer.append(modal)
-      return { name: user.name, email: user.email, username: user.username,  element: card }
+      return { name: user.name, email: user.email, phone: user.phone,  element: card }
 
     })
   })
@@ -58,9 +58,9 @@ fetch("https://jsonplaceholder.typicode.com/users")
     console.log(users[card_id]);
     pop_name.textContent = users[card_id].name;
     pop_email.textContent = "EMAIL   " +users[card_id].email;
-    pop_username.textContent = users[card_id].username;
+    pop_username.textContent = users[card_id].phone;
 
-    pop_id.textContent = users[card_id].id;
+    // pop_id.textContent = users[card_id].id;
     
 
   }
