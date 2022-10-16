@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>task v2</title>
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script1.js" defer></script>
+   
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<!--    
+    <script type="text/javascript" src="https://livejs.com/live.js"></script> -->
+
+
+    
+</head>
+<body>
+
+
+    <div class="search_bar">
+        <!-- <label for="search">Search Users</label> -->
+        <input type="search" id="search" data-search>
+ 
+    </div>
+    <div class="user-cards" data-user-cards-container>
+
+    <template data-user-template>
+    <div class="card"  data-toggle="modal" data-target="#exampleModalCenter"  onclick="getID(event)">
+        <div class="header" data-header> </div>
+        <div class="body" data-body></div>
+        <!-- <div class="body" data-body><img src="/imgs/5.jpg"> </div>   -->
+    </div>
+     </template>
+    </div>
+    <!-- " -->
+    
+  <!-- <span>my number</span>
+    <span>my email</span> -->
+    
+    <!-- <div class="card"  data-toggle="modal" data-target="#exampleModal">
+        <div class="header" data-header>my name </div>
+        <div class="body" data-body><img src="/imgs/eee.png"> <span>my number</span></div>
+        <div class="body" data-body><img src="/imgs/5.jpg"> <span>my email</span></div>  
+    </div>
+
+    <div class="card"  data-toggle="modal" data-target="#exampleModal">
+        <div class="header" data-header>my name </div>
+        <div class="body" data-body><img src="/imgs/eee.png"> <span>my number</span></div>
+        <div class="body" data-body><img src="/imgs/5.jpg"> <span>my email</span></div>  
+    </div> -->
+
+
+   
+
+
+
+    <!-- <div class="card"  data-toggle="modal" data-target="#exampleModal">
+        <div class="header" data-header>my name </div>
+        <div class="body" data-body><img src="/imgs/eee.png"> <span>my number</span></div>
+        <div class="body" data-body><img src="/imgs/5.jpg"> <span>my email</span></div>  
+    </div> -->
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered " role="document">
+       <div class="modal-content">
+           <button type="button" class="btn modal-default-close" data-dismiss="modal" aria-label="Close"><span style="margin-top:-0.21em;" aria-hidden="true">&times;</span></button>
+          
+           <div class="modal-body text-center"> 
+         
+           </div>
+           <div class="b1"></div>
+           <div class="b2 text-center"> </div>
+           <div class="b3 text-center"> </div>
+        
+            
+               <!-- <img src="https://picsum.photos/300/300" class="img-fluid" alt=""> -->
+               <!-- <h4 class="font-weight-light mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+               <button class="btn btn-success m-3 ">Go</button> -->
+          
+
+
+       </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            
+            <div class="close_but" > <button class="c1">X</button>  </div>
+
+                <form class="form-container">
+              
+                    
+                    <div class="form-group">
+                        
+      
+                      <label for="exampleInputEmail1">Имя *</label>
+                      <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Имя">
+                      <small id="emailHelp" class="form-text text-muted"> </small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Телефон *</label>
+                      <input type="tel" class="form-control" id="telNo" placeholder="+7 978 111 11 11">
+                    </div>
+                    <div class="form-check">
+                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                       <label class="form-check-label" for="exampleCheck1">Принимаю условия</label>
+                    </div><br>
+                       <button type="submit" class="btn btn-primary">Отправить</button>
+                 </form>
+        </div>      
+    </div> -->
+
+
+
+
+    
+</body>
+</html>
