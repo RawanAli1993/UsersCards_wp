@@ -33,7 +33,7 @@
     <div class="user-cards" data-user-cards-container>
 
     <template data-user-template>
-    <div class="card"  data-toggle="modal" data-target="#exampleModalCenter">
+    <div class="card"  data-toggle="modal" data-target="#exampleModalCenter" onclick="getID(event)">
         <div class="header" data-header> </div>
         <div class="body" data-body></div>
         <!-- <div class="body" data-body><img src="/imgs/5.jpg"> </div>   -->
@@ -72,15 +72,18 @@
    <div class="modal-dialog modal-dialog-centered " role="document">
        <div class="modal-content">
            <button type="button" class="btn modal-default-close" data-dismiss="modal" aria-label="Close"><span style="margin-top:-0.21em;" aria-hidden="true">&times;</span></button>
-           <div class="modal-body text-center">
-
+           <div class="modal-body text-center"></div>
+           
+           <div class="b1 text-center"></div>
+           <div class="b2 text-center"></div>
+           <div class="b3 text-center"></div>
 
 
             
                <!-- <img src="https://picsum.photos/300/300" class="img-fluid" alt=""> -->
                <!-- <h4 class="font-weight-light mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
                <button class="btn btn-success m-3 ">Go</button> -->
-           </div>
+           
 
 
        </div>
@@ -118,7 +121,7 @@
             <div class="close_but" > <button class="c1">X</button>  </div>
 
                 <form class="form-container">
-              
+                  // pop_id.textContent = users[card_id].id;
                     
                     <div class="form-group">
                         

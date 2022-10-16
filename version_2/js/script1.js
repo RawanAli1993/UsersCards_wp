@@ -1,3 +1,5 @@
+// Access-Control-Allow-: "https://github.com";
+
 const userCardTemplate = document.querySelector("[data-user-template]")
 const userCardContainer = document.querySelector("[data-user-cards-container]")
 const searchInput = document.querySelector("[data-search]")
@@ -15,8 +17,9 @@ searchInput.addEventListener("input", e => {
 })
 
 var newId = 0
-fetch("/home/rawan/test_task_fullstack/version_2/users.json")
 
+// fetch("https://github.com/RawanAli1993/test_task_fullstack/blob/c69e86c41a91f9a06ec98755f0d74b24e20d92a6/version_2/users.json")
+fetch("https://drive.google.com/file/d/1Gim4aftYR2hof7fBOqJNSx8-ZnxmcGHw/view?usp=sharing")
   .then(res => res.json())
   .then(data => {
     users = data.map(user => {
@@ -34,7 +37,7 @@ fetch("/home/rawan/test_task_fullstack/version_2/users.json")
       body.textContent = user.email
       userCardContainer.append(card)
       // userCardContainer.append(modal)
-      return { name: user.name, email: user.email, phone: user.phone,  element: card }
+      return { name: user.name, email: user.email,  element: card }
 
     })
   })
@@ -51,16 +54,16 @@ fetch("/home/rawan/test_task_fullstack/version_2/users.json")
   function getID(event){
     const pop_name =  document.querySelector(".modal-body");
     const pop_email =  document.querySelector(".b1");
-    const pop_username =  document.querySelector(".b2");
+    // const pop_username =  document.querySelector(".b2");
     const pop_id=  document.querySelector(".b3");
     var card_id = event.srcElement.id
     console.log(card_id);
     console.log(users[card_id]);
     pop_name.textContent = users[card_id].name;
     pop_email.textContent = "EMAIL   " +users[card_id].email;
-    pop_username.textContent = users[card_id].phone;
+    // pop_username.textContent = users[card_id].username;
 
-    // pop_id.textContent = users[card_id].id;
+    pop_id.textContent = users[card_id].id;
     
 
   }
