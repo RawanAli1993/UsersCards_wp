@@ -17,9 +17,7 @@ searchInput.addEventListener("input", e => {
 })
 
 var newId = 0
-
-// fetch("https://github.com/RawanAli1993/test_task_fullstack/blob/c69e86c41a91f9a06ec98755f0d74b24e20d92a6/version_2/users.json")
-fetch("https://drive.google.com/file/d/1Gim4aftYR2hof7fBOqJNSx8-ZnxmcGHw/view?usp=sharing")
+fetch("https://raw.githubusercontent.com/RawanAli1993/test_task_fullstack/main/db.json")
   .then(res => res.json())
   .then(data => {
     users = data.map(user => {
