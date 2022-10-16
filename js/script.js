@@ -17,7 +17,7 @@ searchInput.addEventListener("input", e => {
 })
 
 var newId = 0
-fetch("https://raw.githubusercontent.com/RawanAli1993/test_task_fullstack/main/db.json")
+fetch("https://raw.githubusercontent.com/RawanAli1993/UsersCards_wp/main/users.json")
   .then(res => res.json())
   .then(data => {
     users = data.map(user => {
