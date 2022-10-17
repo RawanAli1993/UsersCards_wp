@@ -20,10 +20,6 @@ fetch("https://raw.githubusercontent.com/RawanAli1993/UsersCards_wp/main/users.j
   .then(data => {
     users = data.map(user => {
       const card = userCardTemplate.content.cloneNode(true).children[0]
-      
-      
-      // card.ATTRIBUTE_NODE('id', user.id)
-      // const card1 = userCardTemplate.ATTRIBUTE_NODE(id, user.id)
       const header = card.querySelector("[data-header]")
       const body = card.querySelector("[data-body]")
       const body1 = card.querySelector("[data-body1]")
@@ -34,23 +30,14 @@ fetch("https://raw.githubusercontent.com/RawanAli1993/UsersCards_wp/main/users.j
       body.textContent = user.phone
       body1.textContent = user.email
       userCardContainer.append(card)
-      // userCardContainer.append(modal)
+    
       return { name: user.name, email: user.email, phone: user.phone, 
         address:user.address, department:user.department, position_name:user.position_name, hire_date:user.hire_date, element: card }
-      // ( name, email, department, "address, position_name, "hire_date, phone )
+ 
 
     })
   })
-  // function mypop(params){
-  //   var card1 = document.getElementsByClassName("card");
-  //    var pop1 = document.getElementById("exampleModalCenter");
-  //    popup.style.display='block';
 
-  // }
-  
-
-  
-  // ocument.getElementsByClassName("modal-body").textContent;
   function getID(event){
     const pop_name =  document.querySelector(".fullname");
     const pop_email =  document.querySelector(".email");
@@ -67,16 +54,11 @@ fetch("https://raw.githubusercontent.com/RawanAli1993/UsersCards_wp/main/users.j
     pop_name.textContent = users[card_id].name;    
     pop_email.textContent = users[card_id].email;
     pop_phone.textContent = users[card_id].phone;
-    // pop_phone.textContent = attr('href', 'tel:'+$(users[card_id].phone).val());
-    // pop_phone.textContent = attr('href', 'tel:'+$(users[card_id].phone));
     pop_address.textContent = users[card_id].address;
     pop_department.textContent = users[card_id].department;
     pop_positionname.textContent = users[card_id].position_name;
 
-    pop_hiredate.textContent = users[card_id].hire_date;
-
-    // pop_id.textContent = users[card_id].id;
-    
+    pop_hiredate.textContent = users[card_id].hire_date; 
 
   }
 
