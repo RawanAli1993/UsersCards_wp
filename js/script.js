@@ -64,10 +64,11 @@ fetch("https://raw.githubusercontent.com/RawanAli1993/UsersCards_wp/main/users.j
     var card_id = event.srcElement.id
     console.log(card_id);
     console.log(users[card_id]);
-    pop_name.textContent = users[card_id].name;
-    
-    pop_email.textContent = "EMAIL :   " +users[card_id].email;
+    pop_name.textContent = users[card_id].name;    
+    pop_email.textContent = users[card_id].email;
     pop_phone.textContent = users[card_id].phone;
+    // pop_phone.textContent = attr('href', 'tel:'+$(users[card_id].phone).val());
+    // pop_phone.textContent = attr('href', 'tel:'+$(users[card_id].phone));
     pop_address.textContent = users[card_id].address;
     pop_department.textContent = users[card_id].department;
     pop_positionname.textContent = users[card_id].position_name;

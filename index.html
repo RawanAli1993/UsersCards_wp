@@ -37,8 +37,8 @@
         <div class="header" data-header> </div>
 
 
-        <div class="col"> <img src="imgs/eee.png" class="phone_img"/> <p class="body" data-body></p></div>
-        <div class="col"> <img src="imgs/5.jpg" class="email_img"/> <p class="body" data-body1></p></div>
+        <div class="col"> <img src="imgs/eee.png" class="phone_img"/> <a href="tel:/pop_phone"><p class="body" data-body></p></a></div>
+        <div class="col"> <img src="imgs/5.jpg" class="email_img"/><a href="mailto: + pop_email"><p class="body" data-body1></p></a></div>
 
 
     </div>
@@ -57,34 +57,38 @@
             <div class="popcontent">
 
             <div class="fullname"></div> 
+
             <div class="row">
                 <div class="col-md-6">
-                    <div>the email</div></div>
-                    <div class="col-md-6"><div class="email"></div></div>
+                    <div class="pop_first_col">Телефон:</div></div>
+                   <!-- <div class="col-md-6"><div class="phone"></div></div> -->
+                    <div class="col-md-6"><a href= 'tel:/pop_phone' class="phone"></a></div>
                 </div> 
-                <!-- end first row -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <div>the phone</div></div>
-                        <div class="col-md-6"><div class="phone"></div></div>
-                    </div> 
+  <!-- end first row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="pop_first_col">Почта:</div></div>
+                    <div class="col-md-6"><a  href="mailto: + pop_email"><p class="email"></p></a></div>
+                </div> 
+              
+                
   <!-- end 2 row -->
   <div class="row">
     <div class="col-md-6">
-        <div>the address</div></div>
+        <div class="pop_first_col">Адрес:</div></div>
         <div class="col-md-6"><div class="address"></div></div>
     </div> 
 <!-- end 3 row -->
 <div class="row">
     <div class="col-md-6">
-        <div>the hiredate</div></div>
+        <div class="pop_first_col">Дата приема:</div></div>
         <div class="col-md-6"><div class="hiredate"></div></div>
     </div>
 <!-- end 4 row -->
 
     <div class="row">
         <div class="col-md-6">
-            <div>the department</div></div>
+            <div class="pop_first_col">Подразделение:</div></div>
             <div class="col-md-6">
                 <div class="department"></div>
             </div>
@@ -94,7 +98,7 @@
     <div class="row">
         <div class="col-md-6">
             <!-- <div class="row"> -->
-            <div>the positionname</div>
+            <div class="pop_first_col">Должность:</div>
         </div>
             <div class="col-md-6">
                 <div class="positionname"></div>
@@ -108,13 +112,14 @@
     <div class="col-md-6"> -->
         <!-- <div class="row"> -->
             
-        <div class="dep">additional Information</div>
+        <div class="pop_first_col">Дополнительная информация:</div>
     <!-- </div>  -->
 <!-- 
     <div class="row">
         <div class="col-md-6"> -->
             <!-- <div class="row"> -->
-            <div class="dep1">athis is additonal information</div>
+            <div class="dep1">Разработчики используют текст Лорем ипсум в качестве заполнителя макета страницы. Так как дополнительной информации и в JSON нет, а адрес нигде не
+                используется закинул его сюда: 963 Монтес, церковь Авеню </div>
         <!-- </div> -->
         <!-- <div class="col-md-6">
             <div class="positionname"></div>
