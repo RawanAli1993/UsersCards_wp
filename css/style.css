@@ -14,7 +14,7 @@
    margin-bottom: 2rem;
    margin-top: 1rem;
    border-radius: 15px;
-   background: url(https://github.com/RawanAli1993/test_task_fullstack/blob/main/version_2/imgs/seach-icon-purple.png?raw=true) right  no-repeat;
+   background: url(https://github.com/RawanAli1993/UsersCards_wp/blob/main/imgs/seach-icon-purple.png?raw=true) right  no-repeat;
    
   
  }
@@ -45,10 +45,10 @@
 
  }
  .card{
-border: 1px solid rgb(171, 169, 169);
+/* border: 1px solid rgb(171, 169, 169); */
 /* background-color: white; */
-border-radius: .5rem;
-width: 95%;
+border-radius: 10px;
+width: 80%;
 aspect-ratio: 1/1;
 /* height: 95%; */
 /* height: 19rem; */
@@ -74,14 +74,79 @@ box-shadow: 4px 4px 2px rgb(198, 195, 195);
  }
  .body   {
    font-weight: bold;
-  
+   padding :0 0 0 25px;
    font-size: 75%;
    margin-bottom: 12px;
    /* display: inline; */
-   word-wrap: break-word;
+   /* word-wrap: break-word; */
+   text-overflow: ellipsis;
+  overflow: hidden; 
    
   }
+
+
+
+.phone_img, .email_img{
+   float: left;
+ }
+.modal-dialog{
+
+   width: 35%;
   
+}
+
+
+  .popcontent{
+
+   margin-left: 15px; 
+   margin-right: 15px; 
+   
+    
+
+  }
+
+  .row{
+   margin-bottom: 20px;
+   
+   font-size: 12px;
+   /* text-overflow: ellipsis;
+   overflow: hidden;  */
+   
+  }
+  .email, .phone, .address, .hiredate, .department, .positionname{
+   margin-right: 15px; 
+   margin-left: 15px; 
+   text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+  }
+  .dep, .dep1{
+   margin-top: 0px; 
+  
+   font-size: 12px;
+   /* margin-left: 15px;  */
+   /* margin-right: 15px;  */
+  } 
+  .dep1{
+   margin-bottom: 15px;
+  }
+  
+
+
+
+  .fullname{
+ /* /* margin-top: 30px; */
+
+ margin-top: 30px;
+ margin-bottom: 30px; 
+ /* margin: 30px 0px 10px 15px; */
+ font-weight: bold;
+ font-size: 18px;
+ color: rgb(4, 4, 4);
+  }
+
+
+ 
  
  /* .form-container{
 	background: #fff;
